@@ -1,0 +1,256 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Portfolio{% endblock %}
+
+{% block body %}
+
+
+
+
+    <div class="container">
+
+        <div class="about_me">
+            <h1 class="title">{{ '<About Me />' |e }}</h1>
+            <div class="about_me_container">
+                <div class="glitch-box" data-controller="glitch-border">
+                    <div class="glitch-border top"></div>
+                    <div class="glitch-border right"></div>
+                    <div class="glitch-border bottom"></div>
+                    <div class="glitch-border left"></div>
+                    <div class="glitch-content">
+                        Passionate software developer, I enjoy designing and building projects that give shape to my ideas. Development is, for me, a true creative space where technical rigor blends with imagination. I particularly enjoy starting from an idea or a need and turning it into a functional solution, thoughtfully designed and carefully crafted. Each project is an opportunity for me to learn, experiment, and grow.
+                    </div>
+                </div>
+                <div class="card-client">
+                    <div class="user-picture">
+                        <svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M224 256c70.7 0 128-57.31 128-128s-57.3-128-128-128C153.3 0 96 57.31 96 128S153.3 256 224 256zM274.7 304H173.3C77.61 304 0 381.6 0 477.3c0 19.14 15.52 34.67 34.66 34.67h378.7C432.5 512 448 496.5 448 477.3C448 381.6 370.4 304 274.7 304z"></path>
+                        </svg>
+                    </div>
+                    <p class="name-client"> Valentin RICCUCCI
+                        <span>Developer</span>
+                    </p>
+                    <div class="social-media">
+                        <a target="_blank" rel="noopener noreferrer" href="https://github.com/ValentinRiccucci">
+                            <svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 499.368"><path fill="#fff" fill-rule="nonzero" d="M256.003 0C114.555 0 0 114.555 0 256.003c0 113.286 73.28 208.961 175.038 242.865 12.796 2.247 17.586-5.433 17.586-12.153 0-6.077-.309-26.225-.309-47.686-64.313 11.844-80.941-15.674-86.058-30.055-2.896-7.37-15.359-30.1-26.269-36.177-8.948-4.808-21.752-16.652-.31-16.961 20.168-.309 34.574 18.564 39.382 26.244 23.038 38.732 59.839 27.828 74.555 21.101 2.227-16.627 8.947-27.828 16.318-34.239-56.968-6.386-116.467-28.471-116.467-126.399 0-27.827 9.907-50.866 26.225-68.787-2.562-6.41-11.51-32.655 2.562-67.853 0 0 21.436-6.72 70.409 26.244 20.483-5.767 42.227-8.638 63.998-8.638 21.751 0 43.52 2.896 63.997 8.638 48.973-33.279 70.39-26.244 70.39-26.244 14.09 35.192 5.117 61.443 2.562 67.853 16.318 17.921 26.244 40.625 26.244 68.787 0 98.237-59.84 119.988-116.801 126.399 9.282 8.014 17.277 23.373 17.277 47.371 0 34.238-.309 61.751-.309 70.389 0 6.721 4.808 14.735 17.586 12.179C438.739 464.964 512 368.955 512 256.003 512 114.555 397.445 0 256.003 0z"/></svg>
+                            <span class="tooltip-social">GitHub</span>
+                        </a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/riccucci-valentin/">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path>
+                            </svg>
+                            <span class="tooltip-social">LinkedIn</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <pre class="ascii-train">
+                                   _-====-__-____-============-__
+                                 _(           <span class="underline">STATUS</span>            _)
+                              OO(          OPEN TO WORK          )_
+                             0  (_      Deux-Sèvres,France       _)
+                           o0     (_        Development         _)
+                          o         `=-___-===-_____-========-__)
+                        .o                                _________
+                       . ______          ______________  |         |      _____
+                     _()_||__|| ________ |            |  |_________|   __||___||__
+                    (         | |      | |            |  |Y_____00_|  |_         _|
+                  /-OO----OO**=*OO--OO*=*OO--------OO*=*OO-------OO*=*OO-------OO*=P
+</pre>
+        </div>
+
+        <div class="Experience_container">
+            <h1 class="title">{{ '<Experiences />' |e }}</h1>
+
+            <div class="timeline">
+                <p class="timeline_point">@</p>
+                <div class="card" id="card">
+                    <div class="content">
+                        <div class="card-first-row work">
+                            <p>DENIS & FILS</p>
+                            <p>CLISSON, 44190</p>
+                        </div>
+                        <div class="card-first-row between">
+                            <p>ERP Developer</p>
+                        </div>
+                        <div class="card-second-row">
+                            <p>Developed symfony lottery website, many ERP features, e-commerce with Prestashop, data build with Alteryx. I also do project management. </p>
+                        </div>
+                        <div class="card-third-row">
+                            <p>2023-2025</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline">
+                <p class="timeline_point">@</p>
+                <div class="card" id="card">
+                    <div class="content">
+                        <div class="card-first-row work">
+                            <p>DENIS & FILS</p>
+                            <p>CLISSON, 44190</p>
+                        </div>
+                        <div class="card-first-row between">
+                            <p>Internship ERP Developer</p>
+                        </div>
+                        <div class="card-second-row">
+                            <p>Developed ERP features in COBOL/RPG and JAVA, user support, mobile application with PowerApps.</p>
+                        </div>
+                        <div class="card-third-row">
+                            <p>2022-2023</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline">
+                <p class="timeline_point">@</p>
+                <div class="card" id="card">
+                    <div class="content">
+                        <div class="card-first-row work">
+                            <p>GPA INFORMATIQUE</p>
+                            <p>Niort, 79000</p>
+                        </div>
+                        <div class="card-first-row between">
+                            <p>Developer Internship</p>
+                        </div>
+                        <div class="card-second-row">
+                            <p>
+                                Development of a two-factor authentication system for the internal website using CodeIgniter. Support ticket system.</p>
+                        </div>
+                        <div class="card-third-row">
+                            <p>2021</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="Education_container">
+            <h1 class="title">{{ '<Education />' |e }}</h1>
+
+            <div class="timeline">
+                <p class="timeline_point">@</p>
+                <div class="card" id="card">
+                    <div class="content">
+                        <div class="card-first-row work">
+                            <p>ENI</p>
+                            <p>NANTES, 44000</p>
+                        </div>
+                        <div class="card-first-row between">
+                            <p>Concepteur développeur d'application</p>
+                        </div>
+                        <div class="card-second-row">
+                            <p>I leared many languages and framework like JAVA, SpringBoot, Flutter, Kotlin. Symfony, React. I also learned/practice project management. </p>
+                        </div>
+                        <div class="card-third-row">
+                            <p>2022-2023</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline">
+                <p class="timeline_point">@</p>
+                <div class="card" id="card">
+                    <div class="content">
+                        <div class="card-first-row work">
+                            <p>Lycée Venise Verte</p>
+                            <p>Niort, 79000</p>
+                        </div>
+                        <div class="card-first-row between">
+                            <p>BTS Service Informatique option SLAM</p>
+                        </div>
+                        <div class="card-second-row">
+                            <p>This marked my first step into programming, during which I acquired a solid understanding of core development principles and foundational networking concepts.</p>
+                        </div>
+                        <div class="card-third-row">
+                            <p>2020-2022</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="skills_container">
+            <div class="ruban-container">
+                <div class="ruban-text">
+                    <h1 class="title">{{ '<Skills />' |e }}</h1>
+                </div>
+                <h2>Programming Languages</h2>
+                <div class="ruban-img">
+                    <div class="shadow__skills">
+                        {{ ux_icon('php1') }}
+                        <p>PHP</p>
+                    </div>
+                    <div class="shadow__skills">
+                        {{ ux_icon('html1') }}
+                        <p>HTML</p>
+                    </div>
+                    <div class="shadow__skills">
+                        {{ ux_icon('css') }}
+                        <p>CSS</p>
+                    </div>
+                    <div class="shadow__skills">
+                        {{ ux_icon('js') }}
+                        <p>JS</p>
+                    </div>
+                    <div class="shadow__skills">
+                        {{ ux_icon('c-sharp1') }}
+                        <p>C#</p>
+                    </div>
+                    <div class="shadow__skills">
+                        {{ ux_icon('java') }}
+                        <p>JAVA</p>
+                    </div>
+                    <div class="shadow__skills">
+                        {{ ux_icon('sql') }}
+                        <p>SQL</p>
+                    </div>
+                </div>
+
+                <h2>Tools</h2>
+                <div class="ruban-img">
+                    <div class="shadow__skills">
+                        {{ ux_icon('unity') }}
+                        <p>Unity</p>
+                    </div>
+                    <div class="shadow__skills">
+                        {{ ux_icon('jetbrains') }}
+                        <p>JetBrain tools</p>
+                    </div>
+                    <div class="shadow__skills">
+                        {{ ux_icon('github1') }}
+                        <p>Git / GitHub</p>
+                    </div>
+                    <div class="shadow__skills">
+                        {{ ux_icon('linux') }}
+                        <p>Linux</p>
+                    </div>
+                    <div class="shadow__skills">
+                        {{ ux_icon('phpmyadmin') }}
+                        <p>PhpMyAdmin</p>
+                    </div>
+                    <div class="shadow__skills">
+                        {{ ux_icon('postgresql') }}
+                        <p>PostgreSQL</p>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+
+{% endblock %}

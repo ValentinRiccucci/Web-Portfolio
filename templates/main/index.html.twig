@@ -1,0 +1,45 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Portfolio{% endblock %}
+{% block body %}
+
+
+
+
+    <div class="main-container">
+        <div class="title-shell">
+            <div class="title-text-area">
+                <H1 class="title">{{ '<Valentin />' |e }} </H1>
+                <p class="subtitle">Programmer / Gamer / modelism and chillhop addict</p>
+            </div>
+            <div class="title-button-area">
+                <a class="btn-glitch-fill" href="{{ path('app_about') }}">
+                    <span class="text">// About Me</span><span class="text-decoration"> _</span
+                    ><span class="decoration">⇒</span>
+                </a>
+                <a class="btn-glitch-fill">
+                    <span class="text">// My Projects</span><span class="text-decoration"> _</span
+                    ><span class="decoration">⇒</span>
+                </a>
+            </div>
+        </div>
+        <div class="animation-shell" data-controller="ascii-art">
+            <div class="animation-stage" id="animationStage">
+                <div class="animation-canvas" id="animationCanvas"></div>
+            </div>
+            <div class="controls">
+                <div class="playback-controls" role="group" aria-label="Playback controls">
+                    <button class="playback-button" id="control-play" aria-label="Play animation" type="button"></button>
+                    <button class="playback-button" id="control-stop" aria-label="Stop animation" type="button"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+{% endblock %}
