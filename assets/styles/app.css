@@ -1030,7 +1030,7 @@ pre {
     .ascii-train { font-size: 1em; }
 }
 @media (max-width: 999px) {
-    .ascii-train { font-size: 0.6em; }
+    .ascii-train { font-size: 1em; }
 }
 
 
@@ -1066,8 +1066,9 @@ pre {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-bottom: 2em;
+    /*margin-bottom: 2em;*/
     /*width: 100%;*/
+    align-items: center;
 }
 
 @media (max-width: 768px) {
@@ -1077,7 +1078,8 @@ pre {
     }
 }
 
-.glitch-box {
+
+.resizable-box{
     position: relative;
     width: 400px;
     padding: 30px;
@@ -1086,14 +1088,13 @@ pre {
     color: #fff;
 }
 
-.glitch-content {
+.resizable-content {
     position: relative;
     z-index: 2;
     text-align: justify;
 }
 
-/* Bordures */
-.glitch-border {
+.resizable-border {
     position: absolute;
     /*font-family: monospace;*/
     white-space: nowrap;
@@ -1101,33 +1102,83 @@ pre {
     pointer-events: none;
 }
 
-/* Positions */
-.glitch-border.top {
+.resizable-border.top {
     top: 0;
     left: 0;
     width: 100%;
 }
-
-.glitch-border.bottom {
-    bottom: 0;
-    left: 0;
-    width: 100%;
-}
-
-.glitch-border.left {
-    top: 0;
-    left: 0;
-    height: 100%;
-    writing-mode: vertical-rl;
-}
-
-.glitch-border.right {
+.resizable-border.right {
     top: 0;
     right: 0;
     height: 100%;
     writing-mode: vertical-rl;
+    /*text-orientation: upright;*/
 }
+.resizable-border.bottom {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.resizable-border.left {
+    top: 0;
+    left: 0;
+    height: 100%;
+    writing-mode: vertical-rl;
+    /*text-orientation: upright;*/
+
+}
+
 
 /* /page ===================================================================*/
 
+.test-train{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
 
+.test-nuage{
+    font-family: monospace;
+    white-space: pre; /* essentiel */
+    line-height: 1.1;
+}
+
+
+
+
+
+
+#ascii-trail {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+    font-family: monospace;
+    user-select: none;
+    z-index: -1;
+}
+
+.ascii-char {
+    z-index: -1;
+    position: absolute;
+    font-size: 16px;
+    /*color: #00ff88;*/
+    opacity: 1;
+    animation: fall 1s linear forwards;
+
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(40px);
+        opacity: 0;
+    }
+}
