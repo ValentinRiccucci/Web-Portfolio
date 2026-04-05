@@ -115,9 +115,17 @@ body {
     }
 }
 
-
 .title-text-area > .title{
     margin-bottom: 0;
+}
+
+/* Téléphone */
+@media (max-width: 650px) {
+    .title-text-area {
+        margin: 1em 4em 1em 4em;
+        justify-items: center;
+
+    }
 }
 
 .subtitle{
@@ -133,7 +141,8 @@ body {
 /* Téléphone */
 @media (max-width: 650px) {
     .subtitle {
-        font-size:inherit;
+        font-size:0.8em;
+        margin:1em 0 0 0;
     }
 }
 
@@ -154,7 +163,8 @@ body {
 /* Téléphone */
 @media (max-width: 650px) {
     .title-button-area {
-        font-size:0.8em;
+        font-size:0.6em;
+
     }
 }
 
@@ -170,7 +180,7 @@ body {
     border: 1px solid white;
     color: white;
     padding: 10px 13px;
-    min-width: 175px;
+    /*min-width: 175px;*/
     line-height: 1.5em;
     /*white-space: no-wrap;*/
     text-transform: uppercase;
@@ -423,7 +433,7 @@ body {
 @media (max-width: 600px) {
     .card{
         font-size: 1em;
-        width: 350px;
+        /*width: 350px;*/
         height: 224px;
     }
     .card .content {
@@ -459,7 +469,6 @@ body {
 }
 
 .card {
-
     background: #171717;
     display: flex;
     justify-content: center;
@@ -469,6 +478,11 @@ body {
     box-shadow: 0px 0px 3px 1px #00000088;
     cursor: pointer;
     margin-left: 1em;
+}
+
+.card-project{
+    margin:0; !important;
+    width: auto; !important;
 }
 
 .card .content {
@@ -481,6 +495,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: justify;
 }
 .card-first-row{
     height: fit-content;
@@ -511,6 +526,11 @@ body {
     background-color: black;
     border: #262626 2px solid;
     padding: 0.4em;
+}
+@media (max-width: 600px) {
+    .tech{
+        font-size: 0.8em;
+    }
 }
 
 
@@ -1132,6 +1152,15 @@ pre {
         font-size: 0.5em;
     }
 }
+
+a.Linked,a.linked:visited,a.linked:active,a.linked:link{
+    color: #0e76a8; !important;
+    /*background-color: #EDE9FE;*/
+}
+a.In,a.In:visited,a.In:active,a.In:link{
+    background-color: #0e76a8; !important;
+}
+
 
 
 .about_me_container{
