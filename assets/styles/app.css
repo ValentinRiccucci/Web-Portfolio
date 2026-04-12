@@ -1359,17 +1359,29 @@ a.In,a.In:visited,a.In:active,a.In:link{
 
 .head-title-project {
     /*font-family: Montserrat, sans-serif;*/
-    font-size: 1.3em;
+
     font-weight: 600;
     /*width: 100%;*/
     color: #000000;
     align-self: center;
+}
+/* Téléphone */
+@media (min-width: 651px) {
+    .head-title-project {
+        font-size: 1.3em;
+    }
+}
 
+/* Téléphone */
+@media (max-width: 650px) {
+    .head-title-project {
+        font-size: 1em;
+    }
 }
 
 .card-project {
     /*font-family: Montserrat, sans-serif;*/
-    width: 300px;
+
     height: auto;
     translate: -6px -6px;
     background: #171717;
@@ -1377,16 +1389,45 @@ a.In,a.In:visited,a.In:active,a.In:link{
     box-shadow: 12px 12px 0 #505050;
     overflow: hidden;
     transition: all 0.3s ease;
+    min-height: 10em;
+}
+/* Autre */
+@media (min-width: 651px) {
+    .card-project {
+        width: 400px;
+    }
+}
+
+/* Téléphone */
+@media (max-width: 650px) {
+    .card-project {
+        width: 300px;
+    }
 }
 
 
 .content-project {
     padding: 8px 12px;
-    font-size: 1em;
+    /*font-size: 1em;*/
     /*font-weight: 600;*/
     display: flex;
     flex-direction: column;
-    height: 85%;
+
+}
+/* Autre */
+@media (min-width: 651px) {
+    .content-project {
+        font-size: 1em;
+        height: 85%;
+    }
+}
+
+/* Téléphone */
+@media (max-width: 650px) {
+    .content-project {
+        font-size: 0.8em;
+        height: 78%;
+    }
 }
 
 .text-project{
