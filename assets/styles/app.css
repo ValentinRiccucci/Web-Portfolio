@@ -27,7 +27,7 @@ body {
     margin: 0;
     background-color: #000000;
     font-family: VCR,monospace!important;
-    font-size: 18px;
+    /*font-size: 18px;*/
     line-height: 1;
     color: #f8f9fb;
     display: flex;
@@ -35,6 +35,15 @@ body {
     justify-content: center;
     align-items: flex-start;
     /*min-height: 100vh;*/
+}
+@media (min-width: 1600px) {
+    body{font-size: 18px;}
+}
+@media (min-width: 1025px) and (max-width: 1600px) {
+    body{font-size: 14px;}
+}
+@media (max-width: 1025px) {
+    body{font-size: 18px;}
 }
 
 .spacer{
@@ -287,9 +296,14 @@ body {
     gap: 24px;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1600px) {
     .animation-shell { font-size: 1.5em; }
 }
+
+@media (min-width: 600px) and (max-width: 1600px) {
+    .animation-shell { font-size: 1em; }
+}
+
 @media (max-width: 600px) {
     .animation-shell { font-size: 0.5em; }
 }
